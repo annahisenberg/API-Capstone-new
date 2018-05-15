@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find an animal shelter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>
+            <i class="fas fa-paw"></i>
+            <span class="heading">Find an animal shelter near you</span>
+            <i class="fas fa-paw"></i>
+        </h1>
+    </header>
+    <section id="map">
+        <!-- Google map goes here -->
+    </section>
+    <main role="main">
+        <div class="content">
+            <section>
+                <h2>What's your zip code?</h2>
+                <form action="">
+                    <input type="text" placeholder="Zip code" required>
+                    <button>Go!</button>
+                </form>
+            </section>
+            <section class="displayResults">
+                <!-- List of results go here -->
+            </section>
+        </div>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbEkT06yRxGSnhfi9b45Ww21HHfdfkBuU&libraries=places&callback=initMap"
+        async defer></script>
+</body>
+
+
+
+
+</html>
